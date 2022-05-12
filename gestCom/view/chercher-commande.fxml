@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to right top, #02265d, #613673, #a5497b, #db6977, #ff9671);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.ensao.gi3.gestCom.view.SearchCommandController">
+   <children>
+      <Label layoutX="259.0" layoutY="36.0" text="Chercher commande" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="113.0" text="Data :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="151.0" text="Du : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="226.0" text="Au : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateDebut" layoutX="461.0" layoutY="152.0" onAction="#DateController" />
+      <DatePicker fx:id="dateFin" layoutX="461.0" layoutY="227.0" onAction="#DateController" />
+      <ComboBox fx:id="nomProduit" layoutX="45.0" layoutY="152.0" prefWidth="150.0" promptText="Nom du produit" />
+      <ComboBox fx:id="status" layoutX="45.0" layoutY="227.0" prefWidth="150.0" promptText="Statut" />
+      <Button layoutX="515.0" layoutY="310.0" mnemonicParsing="false" onAction="#searchCommand" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #02265D; -fx-background-radius: 1em;" text="Chercher" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="45.0" layoutY="310.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #02265D; -fx-background-radius: 1em;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

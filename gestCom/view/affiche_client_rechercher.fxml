@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right top, #02265d, #613673, #a5497b, #db6977, #ff9671);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.ensao.gi3.gestCom.view.DispalyClientController">
+   <children>
+      <Label layoutX="426.0" layoutY="28.0" text="Client rechercher" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="85.0" text="Informations Client" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="52.0" layoutY="131.0" prefHeight="113.0" prefWidth="261.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="17.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="71.0" minHeight="5.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="71.0" minHeight="8.0" prefHeight="29.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="265.0" text="Jamaal Yassine - CA : 300 DH" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label prefHeight="3.0" prefWidth="248.0" text="3 commandes livrées - 1 commande annulée" textFill="WHITE" GridPane.rowIndex="2" />
+            <Label prefHeight="17.0" prefWidth="260.0" text="0625789433" textAlignment="JUSTIFY" textFill="WHITE" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="261.0" text="Client depuis 5-5-2018" textFill="WHITE" GridPane.rowIndex="3" />
+            <Label prefHeight="47.0" prefWidth="261.0" text="Dernière commande 1-8-2021" textFill="WHITE" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button layoutX="460.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #02265D; -fx-background-radius: 1em;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="460.0" layoutY="210.0" mnemonicParsing="false" style="-fx-background-color: #02265D; -fx-background-radius: 1em;" text="Commandes" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="39.0" layoutY="338.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #02265D; -fx-background-radius: 1em;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
